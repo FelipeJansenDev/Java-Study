@@ -22,13 +22,9 @@ public class Main {
 
 // Usa a API de Streams para buscar a primeira entrada no HashMap
 // onde o valor (contagem) é maior que 1, ou seja, encontra o primeiro número duplicado.
-        Optional<Map.Entry<Integer, Integer>> search = map.entrySet()
+        System.out.println(map.entrySet()
                 .stream()
-                .filter(entry -> entry.getValue() > 1)
-                .findFirst();
-
-// Imprime 'true' se algum número duplicado foi encontrado, caso contrário imprime 'false'.
-        System.out.println(search.isPresent());
+                .anyMatch(entry -> entry.getValue() > 1));
 
     }
 }
