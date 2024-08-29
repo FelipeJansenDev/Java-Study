@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 // https://neetcode.io/problems/duplicate-integer
-public class Main {
+public class DuplicateInteger {
     public static void main(String[] args) {
         // Define um array de inteiros contendo os números {1, 2, 3, 3}.
         int[] nums = {1, 2, 3, 3};
